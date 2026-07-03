@@ -1,0 +1,1039 @@
+
+This thread is dedicated to provide hardened Lineage-OS 18.1 builds with microG included for the OnePlus 3/3T with current security patches.
+
+It is the successor of my Lineage 17.1 thread.
+It may be worth to also look there, if you are looking for information.
+
+Download here
+
+Features of this ROM​
+
+    Pre-installed microG like LineageOS for microG project (own fork)
+    Pre-installed AuroraStore, AuroraServices and F-Droid
+    OTA Support
+    eSpeakTTS engine
+    Additional security hardening features listed below:
+    Cloudflare as default DNS (instead of Google)
+    Privacy-preferred default settings
+    Optional blocking of Facebook- and Google-Tracking (Settings - Network & Internet)
+    Optional disable captive portal detection or choose from various providers (default is GrapheneOS and not Google; Settings - Network & Internet)
+    Firewall UI (under Trust)
+    Increased max. password length of 64
+    No submission of IMSI/phone number to Google when GPS is in use
+    Default hosts file with many blocked ad/tracking sites
+    Privacy-enhanced Mulch System Webview
+    Extra control of sensor access for additionally installed user apps (Special access under app permissions)
+    Kernel kept up to date with ASB patches of Google kernel/common 'android-4.14-q-release' branch
+    Debloated from Oneplus blobs for Soter and IFAA
+    Hardened bionic lib and constified JNI method tables
+    Option to only use fingerprint unlock for apps and not for the device
+    Optional timeout for Bluetooth and WLAN connections
+    Per connection WiFi randomization option
+
+
+
+Current release levels​
+Custom build release: 2026-06-01
+Security string: 2024-02-05
+AOSP tag: 11.0.0_r46
+AOSmium System Webview: M148
+
+Source-code and build instructions​
+Kernel: https://github.com/lin18-microg/android_kernel_oneplus_msm8996/tree/lin-18.1-mse3
+Build manifest: https://github.com/lin18-microg/local_manifests/tree/lin-18.1-hmalloc
+
+
+Installation Instructions​
+
+
+Dealing with signed builds​
+Please note, that this builds is signed with an own key. When you come from a different build, you cannot directly "dirty-flash" this build. You have to perform a "clean flash" (recommended), or - you do this on your own risk - you may try the below steps.
+
+
+
+Why no Android 12, 13, 14, 15,16 / LineageOS 19, 20, 21, 22 or 23 build ?​
+The answer can be found here: https://lineageos.org/Changelog-26/ (section "Let’s talk about legacy devices…").
+
+Bug reports:​
+If you have a problem, please create a post with these informations:
+Original Kernel shipped with this rom:
+Build Date:
+And try to get log as described here
+Please note that I can't and won't support issues with builds using a different kernel or Xposed.
+In regards to microG, I will try my best to help when it is related to this ROM (I use it myself), but any questions of the type "the YXZ-app can't do <some sort of fancy xyz Google functionality> properly" are better asked in the respective microG forums.
+
+
+Credits​
+AOSP project
+LineageOS project
+microG project
+Graphene OS project
+csagan5 (Bromite)
+WhyOrean (Aurora)
+nvertigo67 (for the modded 9.x firmware and for collaboration)
+SkewedZeppelin (Kernel patches + Mulch webview)
+SteadfasterX (collaboration for Mulch successor AOSmium)
+ 
+Last edited: Jun 6, 2026
+
+    Like 
+
+Reactions: kn2023, Arakmar, DjDeViL66 and 33 others
+MSe1969
+MSe1969
+Senior Member
+
+    Dec 16, 2016
+
+    3,157
+
+    6,022
+
+    Frankfurt Rhine-Main metropolitan region 
+
+    Moto G 
+
+    Sony Xperia Z1 Compact 
+
+    Oct 15, 2021 
+
+    #2
+
+Change Log
+
+June 2026
+
+    Custom build release 2026-06-01
+    AOSmium System Webview 148.0.7778.178
+    F-Droid 1.23.2
+    AuroraStore 4.8.3
+
+
+May 2026
+
+    Custom build release 2026-05-01
+    AOSmium System Webview 148.0.7778.96
+    microG GmsCore & companion v0.3.15.250932
+
+
+April 2026
+
+    Custom build release 2026-04-01
+    AOSmium System Webview 147.0.7727.49
+    microG GmsCore & companion v0.3.14.250932
+    Fix of a microG companion regression
+    Various addl. patches from previous ASBs
+
+
+March 2026
+
+    Custom build release 2026-03-01
+    AOSmium System Webview 146.0.7680.119
+    AuroraStore 4.8.1
+    microG GmsCore & companion v0.3.13.250932
+    Timezone data 2025 update
+
+
+December 2025
+
+    Custom build release 2025-12-01
+    AOSmium System Webview 143.0.7499.109
+    microG GmsCore & companion v0.3.11.250932
+
+
+November 2025
+
+    Custom build release 2025-11-01
+    AOSmium System Webview 142.0.7444.48
+    microG GmsCore & companion v0.3.10.250932
+
+
+September 2025
+
+    Custom build release 2025-09-01
+    AOSmium System Webview 139.0.7258.62
+    AuroraStore 4.7.5
+
+
+August 2025
+
+    Custom build release 2025-08-01
+    AOSmium System Webview 138.0.7204.168
+    AuroraStore 4.7.4
+    F-Droid 1.23.0
+    microG GmcCore & companion v0.3.9.250932
+
+
+July 2025
+
+    No new build
+
+
+June 2025
+
+    Custom build release 2025-06-01
+    AOSmium Webview 137.0.7151.72
+
+
+May 2025
+
+    Custom build release 2025-05-01
+    Timezone data update for 2025
+    AOSmium Webview 135.0.7049.100
+    microG & companion 0.3.7.250932
+
+
+April 2025
+
+    Custom build release 2025-04-01
+    AOSmium Webview 133.0.6943.121
+    AuroraStore 4.7.0
+
+
+March 2025
+
+    Custom build release 2025-03-01
+
+
+February 2025
+
+    Custom build release 2025-02-01
+    AOSmium System Webview 133.0.6943.49
+
+
+January 2025
+
+    Custom build release 2025-01-01
+    AXP.OS System Webview 131.0.6778.260
+    microG & companion v0.3.6.244735
+    AuroraStore 4.6.4
+
+
+December 2024
+
+    Custom build release 2024-12-01
+    Mulch System Webview 131.0.6778.135
+    Kernel patches
+    microG & companion v0.3.5.240913
+    Updated signature spoofing patch
+    F-Droid 1.21.1
+
+
+November 2024
+
+    Custom build release 2024-11-01
+    Mulch System Webview 130.0.6723.102
+    Many kernel patches
+    AuroraStore 4.6.2
+    F-Droid 1.20.1 (back to original APK)
+
+
+October 2024
+
+    Custom build release 2024-10-01
+    Mulch System Webview 129.0.6668.100
+    Some kernel patches
+
+
+September 2024
+
+    Custom build release 2024-09-01
+    Mulch System Webview 128.0.6613.146
+    Some kernel patches
+    AuroraStore 4.6.0
+    Expat: Fixes for CVE-2024-28757, CVE-2024-45490, CVE-2024-45491, CVE-2024-45492
+
+
+August 2024
+
+    Custom build release 2024-08-01
+    Mulch System Webview 127.0.6533.103
+    Some kernel patches
+
+
+July 2024
+
+    Custom build release 2024-07-01
+    Mulch System Webview 126.0.6478.122
+    Some kernel patches
+    AuroraStore 4.5.1
+
+
+June 2024
+
+    Custom build release 2024-06-01
+    Mulch System Webview 126.0.6478.71
+    Many kernel patches
+    GmsCore & companion v0.3.2.240913
+    AuroraStore 4.4.4
+    AuroraDroid (deprecated) replaced with F-Droid 1.19.1
+
+
+May 2024
+
+    Custom build release 2024-05-01
+    Some kernel patches
+    Mulch System Webview 125.0.6422.35
+
+
+April 2024
+
+    Custom build release 2024-04-01
+    Some kernel patches
+    Mulch System Webview 123.0.6312.99
+
+
+March 2024
+
+    Custom build release 2024-03-01
+    Some kernel patches
+    Mulch System Webview 122.0.6261.105
+
+
+February 2024
+
+    ASB Security string 2024-02-05
+    Some kernel patches
+    AuroraStore 4.4.1
+    Mulch System Webview 121.0.6167.164
+
+
+January 2024
+
+    ASB Security string 2024-01-05
+    Some kernel patches
+    Mulch System Webview 120.0.6099.193
+
+
+December 2023
+
+    ASB Security string 2023-12-05
+    Some kernel patches
+    Mulch System Webview 120.0.6099.115
+
+
+November 2023
+
+    ASB Security string 2023-11-05
+    Some kernel patches
+    AuroraStore 4.3.5
+    microG and companion (aka Fakestore) 0.3.0.233515
+    Mulch System Webview 119.0.6045.134
+
+
+October 2023
+
+    ASB Security string 2023-10-05
+    Some kernel patches
+    AuroraStore 4.3.2
+    Fixes for CVE-2023-4863 and CVE-2023-5217
+    microG 0.2.29.233013
+    Mulch System Webview 118.0.5993.65
+
+
+September 2023
+
+    ASB Security string 2023-09-05
+    Some kernel patches
+    Slightly hardened GPS config
+    Updated CA certificates
+    AuroraStore 4.3.1
+    Mulch Webview 117.0.5938.60
+
+
+August 2023
+
+    ASB Security string 2023-08-05
+    Some kernel patches
+    Mulch Webview 115.0.5790.136
+
+
+July 2023
+
+    ASB Security string 2023-07-05
+    Some kernel patches
+    Mulch Webview 114.0.5735.196
+    microG 0.2.28.231657 - "Original" included now
+
+
+June 2023
+
+    ASB Security string 2023-06-05
+    Some kernel patches
+    Mulch Webview 114.0.5735.61
+    microG on 0.2.28.231657-5
+    FakeStore 0.2.0
+    AuroraStore 4.2.3
+
+
+May 2023
+
+    Security string 2023-05-05
+    Some kernel patches
+    Mulch Webview 113.0.5672.77
+
+
+April 2023
+
+    Security string 2023-04-05
+    Some kernel patches
+    Removed Bromite browser and shipped LineageOS' Jelly instead
+    Mulch Webview 112.0.5615.48
+
+
+March 2023
+
+    Security string 2023-03-05
+    Some kernel patches
+    Bromite Webview replaced by Mulch Webview 111.0.5563.58
+
+
+February 2023
+
+    ASB Security string 2023-02-05
+    microG on 0.2.27.223616-3
+    Some kernel patches
+    Spoof apps installed by G*PlayStore
+
+
+January 2023
+
+    Security string 2023-01-05
+    Bromite Browser and Webview updated to 108.0.5359.156
+    Some kernel patches
+    microG 0.2.26.223616-16
+
+
+December 2022
+
+    Security string 2022-12-05
+    Bromite Browser and Webview updated to 108.0.5359.106
+    Some kernel patches
+    microG 0.2.26.223616-2
+
+
+November 2022
+
+    Security string 2022-11-05
+    Bromite Browser and Webview updated to 106.0.5249.163
+    Some kernel patches
+    microG 0.2.25.223616-10
+
+
+October 2022
+
+    Security string 2022-10-05
+    Bromite Browser and Webview updated to 105.0.5195.147
+    Some kernel patches
+    microG 0.2.24.223616-61
+
+
+September 9th, 2022
+
+    Security string 2022-09-05
+    Bromite Browser and Webview updated to 104.0.5112.91
+    Kernel: Some patches and also hardening (GrpaheneOS patches)
+    microG 0.2.24.214816-30
+    Contacts app slightly 'de-Googled'
+
+
+August 6th, 2022
+
+    Security string 2022-08-05
+    Bromite Browser and Webview updated to 103.0.5060.140
+    Some kernel patches
+
+
+July 14th, 2022
+
+    Security string 2022-07-05
+    Some kernel patches
+
+
+June 15th, 2022
+
+    Security string 2022-06-05
+    Some kernel patches
+    Bromite Browser and Webview on 102.0.5005.96
+    microG updated to 0.2.24.214816-11
+
+
+May 9th, 2022
+
+    Security string 2022-05-05
+    Some kernel patches
+    Bromite Browser and Webview on 101.0.4951.53
+    microG updated to 0.2.24.214816-10
+    Mozilla Location provider on 1.5.0
+
+
+April 15th, 2022
+
+    Security string 2022-04-05
+    Some kernel patches
+    Bromite Browser and Webview on 100.0.4896.57
+
+
+March 15th, 2022
+
+    Bromite Browser and Webview on 99.0.4844.58 (bugfix build)
+
+
+March 12th, 2022
+
+    Security string 2022-03-05
+    Some kernel patches
+    Bromite Browser and Webview on 99.0.4844.55
+    microG 0.2.24.214816-2
+    AuroraStore 4.1.1
+
+
+Janaury 20th, 2020
+
+    Security string 2022-01-05
+    Some kernel patches
+    A couple of patches and fixes from LineageOS
+
+
+December 19th, 2021
+
+    Security string 2021-12-05
+    Bromite Webview and Browser on 96.0.4664.54
+    microG 0.22.214516-21
+
+
+November 13th, 2021
+
+    Security string 2021-11-05
+    Bromite Webview and Browser on 94.0.4606.109
+
+
+October 15th, 2021
+Initial build:
+
+    Security string 2021-10-01
+    AOSP tag 11.0.0_r46
+    Pre-installed microG (0.2.22.212658-2) like LineageOS for microG project (own fork)
+    Pre-installed AuroraStore (4.0.7), AuroraDroid (1.0.8) and AuroraServices (1.1.1)
+    OTA Support
+    eSpeakTTS engine
+    Bromite (93.0.4577.83) as default browser
+    Additional security hardening features listed below:
+    Cloudflare as default DNS (instead of Google)
+    Privacy-preferred default settings
+    Optional blocking of Facebook- and Google-Tracking (Settings - Network & Internet)
+    Optional disable captive portal detection or choose from various providers (default is GrapheneOS and not Google; Settings - Network & Internet)
+    Firewall UI (under Trust)
+    Increased max. password length of 64
+    No submission of IMSI/phone number to Google when GPS is in use
+    Default hosts file with many blocked ad/tracking sites
+    Privacy-enhanced Bromite SystemWebView (93.0.4577.83)
+    Extra control of sensor access for additionally installed user apps (Special access under app permissions)
+    Debloated from Oneplus blobs for Soter and IFAA
+    Hardened bionic lib and constified JNI method tables
+    Option to only use fingerprint unlock for apps and not for the device
+    Optional timeout for Bluetooth and WLAN connections
+    Per connection WiFi randomization option
+
+ 
+Last edited: Jun 6, 2026
+
+    Like 
+
+Reactions: DjDeViL66, plato11201, wh1tekn1ght and 9 others
+MSe1969
+MSe1969
+Senior Member
+
+    Dec 16, 2016
+
+    3,157
+
+    6,022
+
+    Frankfurt Rhine-Main metropolitan region 
+
+    Moto G 
+
+    Sony Xperia Z1 Compact 
+
+    Oct 15, 2021 
+
+    #3
+
+Tips & tricks​
+Please refer to the FAQ section here
+
+AuroraStore
+When starting AuroraStore for the 1st time, you cannot choose "AuroraServices" as install method. Choose "Session Installer" to complete the initial setup. Afterwards, you can and should change the installation method to "AuroraServices"
+
+microG
+You should configure https://api.positon.xyz/?key=74600654-2aec-11ef-aa95-3b7218da6865 as an API endpoint in microG Settings -> Location -> ⋮ -> Configure service URL."
+ 
+Last edited: Jul 17, 2024
+
+    Like 
+
+Reactions: _DarkKnight_, wh1tekn1ght, Blaze77h and 2 others
+rudolf895
+rudolf895
+Inactive Recognized Developer
+
+    Oct 11, 2010
+
+    2,519
+
+    642
+
+    IND 
+
+    Oct 18, 2021 
+
+    #4
+
+Hi
+Thanks for this amazing rom! Have not had any major issues that I can report. I think you forgot to add the download link? Could not find it here but got it from your Los 17 thread.
+
+lin18-microG - Browse /oneplus3 at SourceForge.net
+lin18-microG /oneplus3 files. Browse /oneplus3 files for lin18-microG
+sourceforge.net
+
+This is a solid build until we see A12 betas/alpha coming soon, hope you'll fork the same flavor for those roms :D
+ 
+
+    Like 
+
+Reactions: alleykat2561, thomasnsr and MSe1969
+MSe1969
+MSe1969
+Senior Member
+
+    Dec 16, 2016
+
+    3,157
+
+    6,022
+
+    Frankfurt Rhine-Main metropolitan region 
+
+    Moto G 
+
+    Sony Xperia Z1 Compact 
+
+    Oct 18, 2021 
+
+    #5
+
+    rudolf895 said:
+    Hi
+    Thanks for this amazing rom! Have not had any major issues that I can report. I think you forgot to add the download link? Could not find it here but got it from your Los 17 thread.
+
+    lin18-microG - Browse /oneplus3 at SourceForge.net
+    lin18-microG /oneplus3 files. Browse /oneplus3 files for lin18-microG
+    sourceforge.net
+
+    This is a solid build until we see A12 betas/alpha coming soon, hope you'll fork the same flavor for those roms :D
+    Click to expand...
+
+Oops, thanks for the hint! Must have gone lost, when I edited the thread, adding it again.
+
+Edit:
+I am a little bit "conservative", when it comes to providing new versions. That means: Eventually yes (assuming my device continues to work smoothly), but definitely not before LineageOS officially releases 12 for the OP3(T) and not before microG is supported for 12.
+And even if those prerequisites are met, it may take several weeks, so expect at least another 6-7 months from now, before we can seriously talk about a 12 flavor for this build.
+ 
+Last edited: Oct 18, 2021
+
+    Like 
+
+Reactions: mar.ste, thomasnsr and rudolf895
+rudolf895
+rudolf895
+Inactive Recognized Developer
+
+    Oct 11, 2010
+
+    2,519
+
+    642
+
+    IND 
+
+    Oct 18, 2021 
+
+    #6
+
+    MSe1969 said:
+    Oops, thanks for the hint! Must have gone lost, when I edited the thread, adding it again.
+
+    Edit:
+    I am a little bit "conservative", when it comes to providing new versions. That means: Eventually yes (assuming my device continues to work smoothly), but definitely not before LineageOS officially releases 12 for the OP3(T) and not before microG is supported for 12.
+    And even if those prerequisites are met, it may take several weeks, so expect at least another 6-7 months from now, before we can seriously talk about a 12 flavor for this build.
+
+fair assessment of the timeline. I have AOSP build (A12) running on my Op5 and it is so good. :)
+ 
+
+    Like 
+
+Reactions: thomasnsr
+borisSweden
+borisSweden
+Senior Member
+
+    May 10, 2021
+
+    651
+
+    140
+
+    Nintendo Switch 
+
+    OnePlus 7T 
+
+    Oct 18, 2021 
+
+    #7
+
+H
+
+    MSe1969 said:
+    Oops, thanks for the hint! Must have gone lost, when I edited the thread, adding it again.
+
+    Edit:
+    I am a little bit "conservative", when it comes to providing new versions. That means: Eventually yes (assuming my device continues to work smoothly), but definitely not before LineageOS officially releases 12 for the OP3(T) and not before microG is supported for 12.
+    And even if those prerequisites are met, it may take several weeks, so expect at least another 6-7 months from now, before we can seriously talk about a 12 flavor for this build.
+
+How long did you wait for A10 and A11?
+ 
+MSe1969
+MSe1969
+Senior Member
+
+    Dec 16, 2016
+
+    3,157
+
+    6,022
+
+    Frankfurt Rhine-Main metropolitan region 
+
+    Moto G 
+
+    Sony Xperia Z1 Compact 
+
+    Oct 18, 2021 
+
+    #8
+
+    borisSweden said:
+    H
+
+    How long did you wait for A10 and A11?
+
+To bring up the build flavor to a new version, I first start with emulator builds to bring all the features up (if still possible and applicable) and to look for features from other ROMs, which I consider meaningful in regards to hardening/data privacy. Next, I try to build for the devices, I support. For the OP3T, the kernel was a bigger issue, as I wanted to keep the entirely upstreamed one (which I didn't succeed with, so I came up with plan B). Depending on personal time and motivation, you can assume ~2 months before the start of the thread as point in time, where I started developing...
+ 
+
+    Like 
+
+Reactions: alleykat2561, rudolf895, thomasnsr and 2 others
+borisSweden
+borisSweden
+Senior Member
+
+    May 10, 2021
+
+    651
+
+    140
+
+    Nintendo Switch 
+
+    OnePlus 7T 
+
+    Oct 21, 2021 
+
+    #9
+
+I might as well update but I want to fix my mbn auto select problem (I live in Sweden, have a Swedish SIM and EU phone), Bluetooth needs to repair after some time and slwo WiFi. My base is Debloated OOS but should I do a wipe before installing 18.1? As always I use 17.1 hardened edition.
+
+edit: Im a novice but why does the ROM replace Twrp with LOS native recovery. If its installed from twrp it should stay put. And yeah I know, flash Magisk or TWRP app after flashing the ROM.
+ 
+Last edited: Oct 22, 2021
+MSe1969
+MSe1969
+Senior Member
+
+    Dec 16, 2016
+
+    3,157
+
+    6,022
+
+    Frankfurt Rhine-Main metropolitan region 
+
+    Moto G 
+
+    Sony Xperia Z1 Compact 
+
+    Oct 23, 2021 
+
+    #10
+
+    borisSweden said:
+    I might as well update but I want to fix my mbn auto select problem (I live in Sweden, have a Swedish SIM and EU phone), Bluetooth needs to repair after some time and slwo WiFi. My base is Debloated OOS but should I do a wipe before installing 18.1? As always I use 17.1 hardened edition.
+
+What do you mean exactly with "Debloated OOS"? You mean the debloated firmware linked in the OP?
+You can " dirty-flash" my 18.1 build over 17.1.
+As indicated already in my 17.1 thread, I haven't experienced your described issue. I am right now using my OP3T as a hotspot in PL using a PL SIM card without any issues...
+
+    borisSweden said:
+    edit: Im a novice but why does the ROM replace Twrp with LOS native recovery. If its installed from twrp it should stay put. And yeah I know, flash Magisk or TWRP app after flashing the ROM.
+
+There is a setting in the Updater app, which you need to switch off to keep TWRP untouched.
+ 
+
+    Like 
+
+Reactions: thomasnsr
+borisSweden
+borisSweden
+Senior Member
+
+    May 10, 2021
+
+    651
+
+    140
+
+    Nintendo Switch 
+
+    OnePlus 7T 
+
+    Oct 23, 2021 
+
+    #11
+
+    MSe1969 said:
+    And yes, LineageOS 18.1 is Android 11, but the latest firmware for this device has been published by Oneplus for Android 9.
+
+Cant you salvage something from the MSM8996plus OG Pixel 1? Last update was Android Q. Let me guess, signed drivers?
+
+    MSe1969 said:
+    What do you mean exactly with "Debloated OOS"? You mean the debloated firmware linked in the OP?
+    You can " dirty-flash" my 18.1 build over 17.1.
+    As indicated already in my 17.1 thread, I haven't experienced your described issue. I am right now using my OP3T as a hotspot in PL using a PL SIM card without any issues...
+
+Lets see if Gabeldorsche fixes Bluetooth. Nvertigo said that the region selecter works as intended but on PDC I got mostly Chinese and US carriers. I had to do a wipe install so its to late do a "dirty install". i forgot Seedvault was a thing.
+
+    MSe1969 said:
+    There is a setting in the Updater app, which you need to switch off to keep TWRP untouched.
+
+Doh! Cant you remove that option because TWRP is more useful. I was able to change recovery after installing your ROM thankfully didnt brick or wipe my install.
+ 
+Last edited: Oct 24, 2021
+
+    Like 
+
+Reactions: thomasnsr
+Deleted member 4405529
+Guest
+
+    Oct 24, 2021 
+
+    #12
+
+    borisSweden said:
+    Cant you salvage something from the MSM8996plus OG Pixel 1? Last update was Android Q. Let me guess, signed drivers?
+
+
+No. Firmware is device - not only soc - dependent. For details on what exactly firmware contaims see my thread on (patched) firmware in the general forum.
+
+I.g. the bootloader and the modem partitions are part of the firmware. Overwriting these with otjer devives versions will brick your device, and youu will need to use the msm tool to bring it back to life.
+
+Please read the general forum and all los threafs in the dev forum to get the basics to start messing with firmware.
+
+I don't mean to offend you, but some of your questions seem to me that your current questions are three steps ahead of your current knowledge.
+ 
+
+    Like 
+
+Reactions: thomasnsr, MSe1969 and borisSweden
+borisSweden
+borisSweden
+Senior Member
+
+    May 10, 2021
+
+    651
+
+    140
+
+    Nintendo Switch 
+
+    OnePlus 7T 
+
+    Nov 10, 2021 
+
+    #13
+
+Might as well write stuff I found wrong in the ROM as Im returning to OOS. Aurora F-droid lags to much and the F-droid privilege module doesn't work with it. Manually accepting every install and update isnt that fun so I would recommend going back to the OG app.
+
+Also in the update app for LOS, the timestamp is wrong. It says last update 1970 January 1. Should say 10 October.
+
+Idk what my cellular network bug is but on the to right corner the icon is just wrong. Its 4G then the triangle with a X. In preferred network type settings NR/5G is still present. Doesn't make sense that you can chose 5G.
+
+Bluetooth works as intended but in dev settings Enable Gabeldorsche doesnt do anything. Does it even work?
+ 
+MSe1969
+MSe1969
+Senior Member
+
+    Dec 16, 2016
+
+    3,157
+
+    6,022
+
+    Frankfurt Rhine-Main metropolitan region 
+
+    Moto G 
+
+    Sony Xperia Z1 Compact 
+
+    Nov 10, 2021 
+
+    #14
+
+    borisSweden said:
+    Might as well write stuff I found wrong in the ROM as Im returning to OOS. Aurora F-droid lags to much and the F-droid privilege module doesn't work with it. Manually accepting every install and update isnt that fun so I would recommend going back to the OG app.
+
+The ROM comes with AuroraServices, but you have to enable that in the app's setings, then it'll work.
+If you try flashing the F-Droid privileged extension, that won't work for sure!
+
+    borisSweden said:
+    Also in the update app for LOS, the timestamp is wrong. It says last update 1970 January 1. Should say 10 October.
+
+This normally should only happen, if you haven't fetched any update before (or deleted the app cache). Btw, I took over the LineageOS Updater app "as is" and only overlaid the updater URI.
+
+    borisSweden said:
+    Idk what my cellular network bug is but on the to right corner the icon is just wrong. Its 4G then the triangle with a X. In preferred network type settings NR/5G is still present. Doesn't make sense that you can chose 5G.
+
+Tend to agree - will have a look, but I did not change/alter anything here. Will get back...
+
+    borisSweden said:
+    Bluetooth works as intended but in dev settings Enable Gabeldorsche doesnt do anything. Does it even work?
+
+No idea, haven't changed anything in that area - this seems original Android code.
+ 
+
+    Like 
+
+Reactions: alleykat2561, Deleted member 4405529 and thomasnsr
+borisSweden
+borisSweden
+Senior Member
+
+    May 10, 2021
+
+    651
+
+    140
+
+    Nintendo Switch 
+
+    OnePlus 7T 
+
+    Nov 11, 2021 
+
+    #15
+
+    MSe1969 said:
+    No idea, haven't changed anything in that area - this seems original Android code.
+
+In theory less battery usage but it could be Fushsia snakeoil. It written in cleaner code. But everyone knows that a higher BT version is more efficient in battery usage. To bad SBC HD isnt working as intended , APTX take to many resources.
+
+    MSe1969 said:
+    The ROM comes with AuroraServices, but you have to enable that in the app's setings, then it'll work.
+    If you try flashing the F-Droid privileged extension, that won't work for sure!
+
+Did I make a mistake? Yes I did.
+
+>Tend to agree - will have a look, but I did not change/alter anything here. Will get back...
+
+I would like to have a carrier volte profile selector or enable Diag mode for PDC button but that is LOS team job.
+ 
+Deleted member 4405529
+Guest
+
+    Nov 11, 2021 
+
+    #16
+
+Hello my favorite "kernel-upstreamer" ;) ,
+
+android-3.18 has been gone and deprecated/android-3.18 has shown up:
+Code:
+
+ingo@adler /usr/local/src/los16/kernel/oneplus/msm8996 $ LANG=C.UTF-8 git fetch https://android.googlesource.com/kernel/common android-3.18
+fatal: couldn't find remote ref android-3.18
+ingo@adler /usr/local/src/los16/kernel/oneplus/msm8996 $ LANG=C.UTF-8 git fetch https://android.googlesource.com/kernel/common deprecated/android-3.18
+From https://android.googlesource.com/kernel/common
+ * branch                        deprecated/android-3.18 -> FETCH_HEAD
+
+
+My educated guess is that support for 3.18 has been finally droped.
+
+As far as I can see caf for 3.18 for 8x96 hasn't seen any updates for at least 14 months.
+
+I've merged 380bbf94c0fc..839523fca2ef from the deprecated branch on top of your lin-17-mse3 - works great. I've also tried to merge the commits from the 4.x.y branches mentioned here: https://source.android.com/security/bulletin/2021-11-01#kernel-components (but to no advance).
+
+Do you have more information? What are your thoughts?
+
+Take care.
+ 
+
+    Like 
+
+Reactions: thomasnsr
+borisSweden
+borisSweden
+Senior Member
+
+    May 10, 2021
+
+    651
+
+    140
+
+    Nintendo Switch 
+
+    OnePlus 7T 
+
+    Nov 12, 2021 
+
+    #17
+
+    nvertigo67 said:
+    android-3.18 has been gone and deprecated/android-3.18 has shown up:
+
+My question about "how long will 3.18 be supported" was way close to this decision. Did I jinx it?
+ 
+MSe1969
+MSe1969
+Senior Member
+
+    Dec 16, 2016
+
+    3,157
+
+    6,022
+
+    Frankfurt Rhine-Main metropolitan region 
+
+    Moto G 
+
+    Sony Xperia Z1 Compact 
+
+    Nov 13, 2021 
+
+    #18
+
